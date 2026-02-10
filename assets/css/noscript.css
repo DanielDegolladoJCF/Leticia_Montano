@@ -9,12 +9,17 @@
 /* Wrapper */
 
 	#wrapper {
-		background-color: #212931;
-		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-		background-size: auto,								auto,														100% auto;
-		background-position: center,								center,														top center;
-		background-repeat: repeat,								no-repeat,													no-repeat;
-		background-attachment: fixed,								fixed,														fixed;
+		position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 150vh;
+			background-color: #212931;
+			background-image: url("/Lety_images/Banner.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+			background-size: cover;
+			background-position: center;
+			background-attachment: scroll;
+			z-index: -1;
 	}
 
 		#wrapper.fade-in:before {
